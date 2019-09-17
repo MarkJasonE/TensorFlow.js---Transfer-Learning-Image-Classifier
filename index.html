@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <main>
+
+        <section class='titleBox'>
+            <h1>Tensorflow JS</h1>
+            <h2>Transfer Learning Image Classifier</h2>
+        </section>
+        
+        <section class='mainContentWrapper'>
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+            <div class='btnBox'>
+                <button id="class-a">Add A</button>
+                <button id="class-b">Add B</button>
+                <button id="class-c">Add C</button>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
